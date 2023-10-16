@@ -23,8 +23,17 @@
     margin: 0 1em;
 }
 
-.form-container > h1,
-.form-container > p {
+/* .form-container:first-child {
+    padding-top: 2em;
+}
+
+.form-container:last-child {
+    padding-bottom: 2em;
+} */
+
+
+.form-container > h1, p {
+    /* text-align: left; */
     align-self: flex-start;
     max-width: 70%;
 }
@@ -41,6 +50,9 @@ form > div {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+}
+
+form > div, button {
     border: 1px solid #BDBDBD;
     border-radius: 8px;
 }
@@ -51,30 +63,28 @@ button {
     color: #FFFFFF;
     font-weight: bold;
     cursor: pointer;
-    border: none;
 }
 
-form > div > input,
-form > div > textarea {
+form > div > input, button, textarea{
     width: 100%;
     border: none;
     outline: none;
 }
 
 span {
-    display: block;
     text-align: center;
 }
 
 .social-media-container {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.form-update > div {
+
+.form-update > div{
     max-width: 55%;
 }
 
@@ -88,47 +98,52 @@ span {
     max-width: 5em;
 }
 
+
 .section-container {
     width: 100%;
     max-width: 1200px;
+    
 }
-
 .update-container {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5em;
+    
 }
 
 .image-container-update {
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
     gap: 1em;
     margin-bottom: 1em;
 }
 
 .change-info {
-    margin-bottom: 2em;
+    margin: 0 0 2em 0;
 }
-
 .back-a {
     margin-bottom: 2em;
 }
 
-.message-container {
+
+.message-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+
+@media screen and (min-width: 600) {
     .form-container {
         width: 50%;
     }
 }
+
 
 @media screen and (min-width: 1280px) {
     .form-container {
         max-width: 30%;
     }
 }
+
 
