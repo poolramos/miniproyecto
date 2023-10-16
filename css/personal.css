@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em 1em;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 2em;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+main > div {
+    text-align: center;
+}
+
+.personal-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info-container > div {
+    display: grid;
+    align-items: center;
+    padding: 1em 4em;
+    margin: 0 1em;
+    width: 100%;
+    border: 1px solid #BDBDBD;
+}
+
+.personal-info-container > div:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.personal-info-container > div:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.personal-info-container > div > div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.6fr 1fr;
+}
+
+.profile-section > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-button {
+    all: unset;
+    cursor: pointer;
+    border: 1.5px solid #BDBDBD;
+    border-radius: 12px;
+    padding: 0.5em 2em;
+}
+
+.small-text {
+    font-size: 0.8em;
+    color: #828282;
+}
