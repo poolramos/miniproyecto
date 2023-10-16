@@ -2,7 +2,7 @@
 function miniProyectoConnect(){ 
 
 $hostname = 'localhost';
-$dbName = 'mini_proyecto';
+$dbName = 'login_db';
 $username = 'root';
 $password = '';
 $dsn = "mysql:host=$hostname;dbname=$dbName";

@@ -21,8 +21,8 @@
         }
         ?>
 
-            <h1>Join</h1>
-            <p>Master web development</p>
+            <h1>Join thousands of learners from around the world </h1>
+            <p>Master web development by making real-life projects. There are multiple paths for you to choose</p>
 
             <form action="../controllers/users-controller.php" method="post">
                 <div>
@@ -34,7 +34,7 @@
                 </div>
                 <input type="hidden" name="action" value="createUser">
 
-                <button>Start</button>
+                <button>Login</button>
             </form>
 
             <span>or continue with these social profile</span>

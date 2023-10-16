@@ -15,7 +15,7 @@ switch ($action) {
         $userPassword = filter_input(INPUT_POST, 'pssword');
 
         if (empty($userEmail) || empty($userPassword)) {
-            $message = '<p class="notice">Please provide a valid email address and password.</p>';
+            $message = '<p class="notice">Type valid email address and password.</p>';
             include '../views/login.php';
             exit;
         }
@@ -23,7 +23,7 @@ switch ($action) {
         $userData = getUserByEmail($userEmail);
 
         if (!$userData) {
-            $message = '<p class="notice">Please check your email and password and try again.</p>';
+            $message = '<p class="notice">Try again.</p>';
             include '../views/login.php';
             exit;
           }
@@ -32,7 +32,7 @@ switch ($action) {
 
         if (!$hashCheck) {
             
-            $message = '<p class="notice">Paso Please check your email and password and try again.</p>';
+            $message = '<p class="notice">Try again.</p>';
             include '../views/login.php';
             exit;
           }
@@ -56,7 +56,7 @@ switch ($action) {
         $pssword = trim(filter_input(INPUT_POST, 'pssword'));
 
         if (empty($email) || empty($pssword)) {
-            $message = '<p>Please provide information for all empty form fields.</p>';
+            $message = '<p>Type information for all empty form fields.</p>';
             include '../views/create-user.php';
             exit;
         }
@@ -64,7 +64,7 @@ switch ($action) {
         $existingEmail = checkExistingEmail($email);
 
         if ($existingEmail) {
-            $message = '<p>The email address already exists. Do you want to login instead?</p>';
+            $message = '<p>The email address already exists. Try again?</p>';
             include '../views/login.php';
             exit;
           }
